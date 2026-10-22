@@ -1,0 +1,309 @@
+
+/* Navbar Container */
+.cmp-navbar {
+    background-color: #ffffff;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cmp-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Brand Logo (Prefix cmp-) */
+.cmp-brand-logo {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.cmp-brand-logo span {
+    color: #ffd600;
+}
+
+.cmp-logo-image {
+    display: block;
+    width: 125px;
+    height: auto;
+}
+
+/* Menu Navigasi (Prefix cmp-) */
+.cmp-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    list-style: none;
+}
+
+.cmp-nav-menu a,
+.cmp-nav-link {
+    position: relative;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.cmp-nav-menu a:hover,
+.cmp-nav-link:hover {
+    color: #ffd600;
+}
+
+.cmp-nav-menu a.active,
+.cmp-nav-link.active {
+    color: #000000;
+}
+
+.cmp-nav-menu a.active::after,
+.cmp-nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #ffd600;
+    border-radius: 99px;
+}
+
+/* Header & Banner Campaign */
+.cmp-header-bg {
+    background-color: #071a40;
+    color: #ffffff;
+    padding: 40px 0 35px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cmp-header-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.cmp-header-subtitle {
+    color: #c9d7ed;
+    margin-top: 6px;
+    font-size: 1.05rem;
+}
+
+/* Filter & Search Bar Area */
+.cmp-filter-section {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.cmp-search-box {
+    flex: 1;
+    min-width: 260px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #ffffff;
+    color: #172033;
+}
+
+.cmp-search-box:focus {
+    border-color: #071a40;
+    box-shadow: 0 0 0 3px rgba(7, 26, 64, 0.1);
+}
+
+.cmp-category-select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-weight: 600;
+    color: #172033;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Category Chips / Tabs Filter */
+.cmp-category-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 28px 0 32px 0;
+    overflow-x: auto;
+    padding-bottom: 6px;
+}
+
+.cmp-tab-chip {
+    padding: 8px 22px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #475569;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.cmp-tab-chip.active, 
+.cmp-tab-chip:hover {
+    background-color: #071a40;
+    color: #ffd600;
+    border-color: #071a40;
+}
+
+/* Grid & Card Layout Campaign */
+.cmp-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 992px) {
+    .cmp-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cmp-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cmp-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cmp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Container Utama Gambar Kartu */
+.cmp-card-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background-color: #e2e8f0;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cmp-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cmp-card:hover .cmp-card-image img {
+    transform: scale(1.05);
+}
+
+.cmp-card-image-placeholder {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 12px;
+}
+
+/* Badge Kategori */
+.cmp-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: fit-content;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.cmp-badge-devin { background: #FEF3C7; color: #92400E; }
+.cmp-badge-edu   { background: #EBF3FF; color: #0A56D9; }
+.cmp-badge-disaster { background: #FEE2E2; color: #991B1B; }
+
+/* Progress Bar Donasi */
+.cmp-progress-track {
+    background: #e2e8f0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 14px 0 8px 0;
+}
+
+.cmp-progress-fill {
+    background: #ffd600;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Gradasi Teks Biru Logo */
+.teks-gradasi-biru {
+    background: linear-gradient(180deg, #1d69d8 0%, #08285e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+/* Detail Page Custom Layout */
+.cmp-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 24px;
+}
+
+@media (max-width: 868px) {
+    .cmp-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cmp-banner-placeholder {
+    width: 100%;
+    height: 320px;
+    background: #e2e8f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-weight: 700;
+}
+.cmp-banner-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Mencegah gambar terdistorsi/gepeng */
+    border-radius: 12px;
+    background-color: #e2e8f0;
+    display: block;
+}
+

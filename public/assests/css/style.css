@@ -1,0 +1,1106 @@
+/* MR. BUAS GLOBAL STYLE */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+/* Navbar Global */ 
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0a56d9;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+/* Button System */ 
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd21e;
+    color: #172033;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #0a56d9;
+    color: #0a56d9;
+    border-radius: 6px;
+}
+
+.btn-danger {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ef4444;
+    color: white;
+    border-radius: 6px;
+}
+
+
+/* Table UI */ 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 16px;
+}
+
+.table th,
+.table td {
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f1f5f9;
+}
+
+
+/* Forms & Cards */ 
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* =====================================================
+   HOMEPAGE MR. BUAS
+   ===================================================== */
+
+
+/* Container khusus homepage */
+.home-container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HERO BACKGROUND
+   ========================= */
+
+.hero-home {
+    position: relative;
+
+    min-height: 100vh;
+
+    background-image: url("../images/hero-home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* overlay biru gelap */
+.hero-home-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 18, 52, 0.98) 0%,
+        rgba(0, 29, 76, 0.94) 30%,
+        rgba(0, 32, 83, 0.68) 55%,
+        rgba(0, 20, 55, 0.22) 100%
+    );
+
+    z-index: 1;
+}
+
+
+/* =========================
+   NAVBAR HOME
+   ========================= */
+
+.home-navbar {
+    position: relative;
+
+    z-index: 10;
+
+    padding: 26px 0;
+}
+
+.home-nav-wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* Logo */
+
+.home-brand-logo {
+    color: #ffffff;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    line-height: 0.8;
+
+    letter-spacing: -1px;
+}
+
+.home-brand-logo span {
+    color: #ffd600;
+}
+
+
+/* Kalau nanti pakai logo PNG */
+
+.home-logo-image {
+    display: block;
+
+    width: 125px;
+
+    height: auto;
+}
+
+
+/* Menu */
+
+.home-nav-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 42px;
+
+    list-style: none;
+}
+
+.home-nav-menu a {
+    position: relative;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    padding-bottom: 10px;
+
+    transition: 0.2s ease;
+}
+
+.home-nav-menu a:hover {
+    color: #ffd600;
+}
+
+.home-nav-menu a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 3px;
+
+    background-color: #ffd600;
+
+    border-radius: 99px;
+}
+
+
+/* =========================
+   NAVBAR ACTION
+   ========================= */
+
+.home-nav-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.home-login-button,
+.home-donate-button {
+    display: inline-block;
+
+    padding: 15px 26px;
+
+    border-radius: 12px;
+
+    font-weight: 800;
+
+    transition: 0.2s ease;
+}
+
+.home-login-button {
+    background-color: #ffffff;
+
+    color: #071a40;
+}
+
+.home-donate-button {
+    background-color: #ffd600;
+
+    color: #071a40;
+}
+
+.home-login-button:hover,
+.home-donate-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO CONTENT
+   ========================= */
+
+.hero-home-content {
+    position: relative;
+
+    z-index: 5;
+
+    min-height: 570px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.hero-home-text {
+    width: 58%;
+
+    max-width: 900px;
+}
+
+
+/* Badge */
+
+.hero-home-badge {
+    display: inline-block;
+
+    padding: 11px 23px;
+
+    margin-bottom: 26px;
+
+    border: 2px solid #1388ff;
+
+    border-radius: 30px;
+
+    background-color: rgba(0, 64, 145, 0.35);
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-home-badge strong {
+    color: #ffd600;
+}
+
+
+/* =========================
+   HERO TITLE
+   ========================= */
+
+.hero-home-text h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(58px, 5vw, 88px);
+
+    line-height: 0.98;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+}
+
+.hero-home-text h1 span {
+    display: block;
+
+    color: #ffd600;
+}
+
+
+/* =========================
+   DESCRIPTION
+   ========================= */
+
+.hero-home-description {
+    max-width: 700px;
+
+    margin-top: 24px;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 23px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   HERO BUTTONS
+   ========================= */
+
+.hero-home-buttons {
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 32px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+    display: inline-block;
+
+    padding: 17px 30px;
+
+    border-radius: 12px;
+
+    font-size: 19px;
+    font-weight: 800;
+
+    transition: 0.2s ease;
+}
+
+
+/* Primary */
+
+.hero-primary-button {
+    background-color: #ffd600;
+
+    border: 2px solid #ffd600;
+
+    color: #071a40;
+}
+
+
+/* Secondary */
+
+.hero-secondary-button {
+    background-color: rgba(0, 35, 85, 0.42);
+
+    border: 2px solid #ffffff;
+
+    color: #ffffff;
+}
+
+.hero-primary-button:hover,
+.hero-secondary-button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-secondary-button:hover {
+    background-color: #ffffff;
+
+    color: #071a40;
+}
+
+
+/* =========================
+   STATISTICS
+   ========================= */
+
+.home-statistics {
+    position: relative;
+
+    z-index: 5;
+
+    width: 86%;
+    max-width: 1500px;
+
+    margin: -8px auto 35px;
+
+    padding: 30px 38px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto
+        1fr auto
+        1fr auto
+        1fr;
+
+    align-items: center;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 38, 97, 0.97),
+        rgba(0, 63, 150, 0.94)
+    );
+
+    border: 1px solid #1588ff;
+
+    border-radius: 24px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Stat Item */
+
+.home-stat-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 0 24px;
+}
+
+
+/* Icon */
+
+.home-stat-icon {
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #0879fa;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-stat-icon.yellow {
+    background-color: #e7bc00;
+}
+
+
+/* Statistic number */
+
+.home-stat-item h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    line-height: 1.1;
+
+    font-weight: 900;
+}
+
+
+/* Statistic title */
+
+.home-stat-item h3 {
+    margin: 5px 0 7px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+}
+
+
+/* Statistic description */
+
+.home-stat-item p {
+    margin: 0;
+
+    color: #c9d7ed;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* Divider */
+
+.home-stat-divider {
+    width: 1px;
+
+    height: 105px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .home-nav-menu {
+        display: none;
+    }
+
+    .hero-home-text {
+        width: 75%;
+    }
+
+    .home-statistics {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px;
+    }
+
+    .home-stat-divider {
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .home-nav-actions {
+        display: none;
+    }
+
+    .hero-home {
+        background-position: 65% center;
+    }
+
+    .hero-home-text {
+        width: 100%;
+    }
+
+    .hero-home-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-home-description {
+        font-size: 18px;
+    }
+
+    .hero-home-buttons {
+        flex-direction: column;
+    }
+
+    .hero-primary-button,
+    .hero-secondary-button {
+        text-align: center;
+    }
+
+    .home-statistics {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+}
+/* ==========================================================================
+   MR. BUAS - MASTER CSS MODUL PAYMENT (STRICT PREFIX: pmt-)
+   Digunakan untuk Halaman Admin & Checkout Flow Publik
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. NAVBAR & NAVIGATION (PUBLIK)
+   -------------------------------------------------------------------------- */
+.pmt-navbar {
+  background-color: #1e40af;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 14px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pmt-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pmt-nav-menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pmt-nav-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.pmt-nav-link:hover,
+.pmt-nav-link.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. STEPPER WIZARD (3-STEP INDICATOR PUBLIK)
+   -------------------------------------------------------------------------- */
+.pmt-stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 28px 0 36px 0;
+}
+
+.pmt-step-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.pmt-step-item.active {
+  color: #2563eb;
+}
+
+.pmt-step-item.completed {
+  color: #16a34a;
+}
+
+.pmt-step-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pmt-step-item.active .pmt-step-badge {
+  background-color: #2563eb;
+}
+
+.pmt-step-item.completed .pmt-step-badge {
+  background-color: #16a34a;
+}
+
+.pmt-step-line {
+  width: 60px;
+  height: 2px;
+  background-color: #e2e8f0;
+}
+
+.pmt-step-line.active {
+  background-color: #2563eb;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. LAYOUT GRID & CARDS
+   -------------------------------------------------------------------------- */
+/* Grid 2 Kolom Layout Publik (65% Content / 35% Sidebar) */
+.pmt-checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .pmt-checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Standar Admin & Detail */
+.pmt-card,
+.pmt-block-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Sticky Sidebar Ringkasan Donasi */
+.pmt-sidebar-sticky {
+  position: sticky;
+  top: 90px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* --------------------------------------------------------------------------
+   4. TAB SWITCHER & RADIO CARD (PILIH METODE)
+   -------------------------------------------------------------------------- */
+/* Tab Filter Kategori (Semua / Bank / E-Wallet) */
+.pmt-tab-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.pmt-tab-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.pmt-tab-btn:hover {
+  background-color: #f8fafc;
+}
+
+.pmt-tab-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* Radio Option Card Metode Pembayaran */
+.pmt-radio-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.pmt-radio-card:hover {
+  border-color: #93c5fd;
+}
+
+.pmt-radio-card.selected {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.pmt-radio-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.pmt-radio-card.selected .pmt-radio-dot {
+  border-color: #2563eb;
+  background-color: #2563eb;
+}
+
+.pmt-radio-card.selected .pmt-radio-dot::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+
+/* --------------------------------------------------------------------------
+   5. CALLOUT BOX & DATA ROWS
+   -------------------------------------------------------------------------- */
+.pmt-callout-box {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pmt-data-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #f1f5f9;
+  font-size: 14px;
+}
+
+.pmt-data-row:last-child {
+  border-bottom: none;
+}
+
+.pmt-data-label {
+  color: #64748b;
+}
+
+.pmt-data-value {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.pmt-summary-total-box {
+  border-top: 2px solid #f1f5f9;
+  padding-top: 16px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+
+/* --------------------------------------------------------------------------
+   6. DATA TABLE ADMIN & BADGES
+   -------------------------------------------------------------------------- */
+.pmt-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.pmt-table th {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pmt-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.pmt-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.pmt-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Badges */
+.pmt-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.pmt-badge-aktif {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.pmt-badge-nonaktif {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.pmt-badge-bank {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.pmt-badge-ewallet {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+
+/* --------------------------------------------------------------------------
+   7. FORM CONTROLS & BUTTONS
+   -------------------------------------------------------------------------- */
+.pmt-form-control {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.pmt-form-control:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Buttons */
+.pmt-btn-yellow {
+  background-color: #facc15;
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.pmt-btn-yellow:hover {
+  background-color: #eab308;
+}
+
+.pmt-btn-blue {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.pmt-btn-blue:hover {
+  background-color: #1e40af;
+}
+
+.pmt-btn-outline,
+.pmt-btn-back {
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.pmt-btn-outline:hover,
+.pmt-btn-back:hover {
+  background-color: #f1f5f9;
+}
+
+.pmt-btn-danger {
+  background-color: #dc2626;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.pmt-btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+.pmt-btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
